@@ -1,13 +1,27 @@
+import { useState } from "react";
 import logo from "../images/Logo.svg";
+import burgerIcon from "../images/hamburger-icon.svg";
 
 const Nav = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
-      <nav>
+      <nav className={`nav-container ${isOpen ? "open" : ""}`}>
         <a href="/">
           <img src={logo} alt="logo" />
         </a>
-        <ul>
+
+        {/* Mobile */}
+        <div className="burger-icon">
+          <img src={burgerIcon} alt="burger-icon" onClick={toggleMenu} />
+        </div>
+
+        <ul className={`nav-ul ${isOpen ? "mobile" : ""}`}>
           <li>
             <a href="/">Home</a>
           </li>

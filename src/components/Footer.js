@@ -4,8 +4,17 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <section>
-          <img src={Logo} alt="logo" />
+        <section className="footer-container">
+          <div>
+            <img src={Logo} alt="logo" />
+            <p>
+              <i>
+                {" "}
+                We are a family owned Mediterranean restaurant, focused on
+                traditional recipes served with a modern twist.
+              </i>
+            </p>
+          </div>
           <div>
             <h3>Doormat Navigation</h3>
             <ul>
@@ -33,14 +42,30 @@ const Footer = () => {
           <div>
             <h3>Contact</h3>
             <ul>
-              <li>xxxxx</li>
+              <li>
+                Address: <br /> 12345 San Francisco, USA
+              </li>
+              <li>
+                Phone Number: <br /> 01234 567 889
+              </li>
+              <li>
+                Email: <br /> little-lemon@gmail.com
+              </li>
             </ul>
           </div>
 
           <div>
             <h3>Social Media Links</h3>
             <ul>
-              <li>cccccc</li>
+              <li>
+                <a href="/">Instagram</a>
+              </li>
+              <li>
+                <a href="/">Twitter</a>
+              </li>
+              <li>
+                <a href="/">Facebook</a>
+              </li>
             </ul>
           </div>
         </section>

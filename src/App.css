@@ -126,6 +126,7 @@ button {
   padding: 10px;
   border-radius: 10px;
   border: none;
+  cursor: pointer;
 }
 
 .heroImg-container {
@@ -187,6 +188,7 @@ button {
 
 .card button {
   padding: 10px;
+  margin: 15px;
 }
 
 .card h3 {
@@ -266,10 +268,19 @@ footer {
     text-align: center;
   }
 
+  .menu-header {
+    max-width: 300px;
+  }
+
   .cards-container {
     flex-direction: column;
     width: 350px;
     margin: auto;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
   }
 
   footer {
@@ -284,5 +295,9 @@ footer {
   .footer-container div {
     min-width: 100%;
     margin-bottom: 40px;
+  }
+
+  .footer-container p {
+    max-width: 250px;
   }
 }

@@ -22,7 +22,7 @@ const Menu = () => {
                   <h2>{recipe.title}</h2>
                   <p>${recipe.price}</p>
                 </div>
-                <h3>{recipe.description}</h3>
+                <h4>{recipe.description}</h4>
                 <button>Order a Delivery</button>
               </div>
             );
